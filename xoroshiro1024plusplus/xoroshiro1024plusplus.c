@@ -98,8 +98,6 @@ valid_seed:
 	return 0;
 }
 
-#include <string.h>
-
 // equivalent to 2^512 calls to xoroshiro1024plusplus_next()
 void
 xoroshiro1024plusplus_jump(
