@@ -43,8 +43,8 @@ uint64_t next(void) {
 	const uint64_t     sF = s[pF];
 	const uint64_t     sX = s0 ^ sF;
 
-	s[pF] = rotl(s0, (uint8_t) 25u) ^ sX ^ (uint64_t) (sX << 27u);
 	s[p0] = rotl(sX, (uint8_t) 36u);
+	s[pF] = rotl(s0, (uint8_t) 25u) ^ sX ^ (uint64_t) (sX << 27u);
 
 	return rotl(s0 + sF, (uint8_t) 23u) + sF;
 }

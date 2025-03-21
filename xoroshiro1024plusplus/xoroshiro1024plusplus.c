@@ -67,8 +67,8 @@ xoroshiro1024plusplus_next(
 	const uint64_t     sF = s[pF];
 	const uint64_t     sX = s0 ^ sF;
 
-	s[pF] = rotl64(s0, (uint8_t) 25u) ^ sX ^ (uint64_t) (sX << 27u);
 	s[p0] = rotl64(sX, (uint8_t) 36u);
+	s[pF] = rotl64(s0, (uint8_t) 25u) ^ sX ^ (uint64_t) (sX << 27u);
 
 	return rotl64(s0 + sF, (uint8_t) 23u) + sF;
 }
