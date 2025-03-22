@@ -32,7 +32,7 @@ uint64_t next(void) {
 // modified
 
 static inline uint64_t rotl(const uint64_t x, uint8_t k) {
-	return (x << k) | (x >> ((uint8_t) 64u) - k);
+	return (x << k) | (x >> (((uint8_t) 64u) - k));
 }
 
 __attribute__((noinline))
