@@ -1,10 +1,13 @@
 # misc
 
-## asspf
+### asspf
 Async-Signal-Safe Print Functions
 
-## battery%
+### battery%
 displays laptop battery percentage
 
-## xoroshiro1024plusplus
+### bitset
+bitset/bitarray/bitmap/bitvector functions
+
+### xoroshiro1024plusplus
 pseudo-random number generator
